@@ -6,14 +6,17 @@ import {
     Switch
 } from "react-router-dom"
 import Home from "./pages/Home"
+import Projects from "./pages/Projects"
 import "@fortawesome/fontawesome-free/css/all.min.css"
+import RouteUrl from "./constants/RouteUrl"
 
 
 const App: React.FC = () => (
     <Router>
         <Switch>
-            <Route path="/" component={Home}/>
-            <Route path="/about"/>
+            <Route path={RouteUrl.projects} component={Projects}/>
+            <Route path={RouteUrl.cv} component={Home}/>
+            <Route path={RouteUrl.root} component={Home}/>
         </Switch>
     </Router>
 )
