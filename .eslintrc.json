@@ -18,6 +18,7 @@
   ],
   "rules": {
     "no-var": "warn",
+    "react/prop-types": "off",
     "indent": [
       "warn",
       4,

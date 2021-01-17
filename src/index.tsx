@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import RouteUrl from "./constants/RouteUrl"
+import "./i18n"
 
 
 const App: React.FC = () => (
