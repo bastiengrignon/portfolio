@@ -1,6 +1,5 @@
 import React from "react"
 import {Link, useHistory} from "react-router-dom"
-import profilePicture from "../../../src/profile-picture.jpg"
 import RouteUrl from "../../constants/RouteUrl"
 import {useTranslation} from "react-i18next"
 
@@ -17,11 +16,13 @@ const SideBar: React.FC = () => {
     const history = useHistory()
     return (
         <div className="w-1/5 h-screen bg-gray-800 text-white">
-            <div className="flex justify-center pt-10">
-                <img src={profilePicture} alt="Profile Picture" className="rounded-full w-48 h-48"/>
-            </div>
-            <div className="flex justify-center text-3xl uppercase mt-2">Bastien Grignon</div>
-            <div className="flex justify-center italic mt-3 text-sm">{t("current_job")}</div>
+            <Link to={RouteUrl.root}>
+                <div className="flex justify-center pt-10">
+                    <img src={process.env.PUBLIC_URL + "/img/profile-picture.jpg"} alt="Profile Picture" className="rounded-full w-48 h-48"/>
+                </div>
+                <div className="flex justify-center text-3xl uppercase mt-2">Bastien Grignon</div>
+                <div className="flex justify-center italic mt-3 text-sm">{t("current_job")}</div>
+            </Link>
 
             <nav className="mt-10 text-gray-100">
                 <Link to={RouteUrl.root}
