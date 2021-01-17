@@ -6,6 +6,7 @@ import {
     Switch
 } from "react-router-dom"
 import Home from "./pages/Home"
+import "@fortawesome/fontawesome-free/css/all.min.css"
 
 
 const App: React.FC = () => (
