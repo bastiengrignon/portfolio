@@ -25,3 +25,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Tailwind generated file
+public/css/tailwind-index.css
