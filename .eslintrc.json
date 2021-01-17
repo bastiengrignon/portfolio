@@ -19,7 +19,7 @@
   "rules": {
     "no-var": "warn",
     "indent": [
-      "error",
+      "warn",
       4,
       {
         "SwitchCase": 1
