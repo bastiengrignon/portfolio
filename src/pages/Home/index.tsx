@@ -4,6 +4,7 @@ const Home: React.FC = () => {
     return (
         <div className="flex justify-center">
             Home page
+            <i className="fab fa-github"/>
         </div>
     )
 }
