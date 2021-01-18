@@ -19,9 +19,9 @@ const Timeline: React.FC<TimelineProps> = ({date, title, description}) => {
         <li className="inline-flex w-full py-6 pr-24 relative">
             <div
                 className="absolute border-r-2 border-gray-400 border-dotted h-full z-0"
-                style={{marginLeft: "6.1rem"}}/>
+                style={{marginLeft: "6.45rem"}}/>
             <div className="inline-flex items-start">
-                <div className="inline-flex items-center">
+                <div className="inline-flex items-center justify-between w-32">
                     <div className="text-gray-500 font-light italic whitespace-nowrap">{date}</div>
                     <span className="flex items-center h-4 w-4 z-10 mx-4">
                         <span
