@@ -8,7 +8,7 @@ interface TimelineProps {
 
 const randomBackgroundColors = (): string => {
     const colors: string[] = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]
-    const opacities: number[] = [300, 400, 500, 600]
+    const opacities: number[] = [300, 400, 500]
     const randomColor: string = colors[Math.floor(Math.random() * colors.length)]
     const randomOpacity: number = opacities[Math.floor(Math.random() * opacities.length)]
     return `bg-${randomColor}-${randomOpacity}`
