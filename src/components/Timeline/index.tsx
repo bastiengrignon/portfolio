@@ -1,10 +1,5 @@
 import React from "react"
-
-interface TimelineProps {
-    date: string
-    title: string
-    description: string | React.FC
-}
+import {CareerProps} from "../../constants/career"
 
 const randomBackgroundColors = (): string => {
     const colors: string[] = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]
@@ -14,7 +9,7 @@ const randomBackgroundColors = (): string => {
     return `bg-${randomColor}-${randomOpacity}`
 }
 
-const Timeline: React.FC<TimelineProps> = ({date, title, description}) => {
+const Timeline: React.FC<CareerProps> = ({date, title, description}) => {
     return (
         <li className="inline-flex w-full py-6 pr-24 relative">
             <div
