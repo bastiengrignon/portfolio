@@ -3,7 +3,7 @@ import SideBar from "../../components/SideBar"
 import LanguageSelector from "../../components/LanguageSelector"
 
 const Projects: React.FC = () => (
-    <div>
+    <div className="inline-flex w-full">
         <LanguageSelector className="absolute top-0 right-0"/>
         <SideBar/>
         Project page
