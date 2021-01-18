@@ -15,7 +15,7 @@ const SideBar: React.FC = () => {
     const {t} = useTranslation()
     const history = useHistory()
     return (
-        <div className="w-1/5 h-screen bg-gray-800 text-white">
+        <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white">
             <Link to={RouteUrl.root}>
                 <div className="flex justify-center pt-10">
                     <img src={process.env.PUBLIC_URL + "/img/profile-picture.jpg"} alt="Profile Picture" className="rounded-full w-48 h-48"/>
@@ -43,13 +43,13 @@ const SideBar: React.FC = () => {
                 <span className="text-sm">{t("contact")}</span>
                 <div>
                     <a href={links.email} rel={"noopener noreferrer"}>
-                        <i className="fas fa-envelope mx-2"/>
+                        <i className="fas fa-envelope mx-2 hover:text-yellow-400"/>
                     </a>
                     <a href={links.github} target={"_blank"} rel={"noopener noreferrer"}>
-                        <i className="fab fa-github mx-2"/>
+                        <i className="fab fa-github mx-2 hover:text-yellow-400"/>
                     </a>
                     <a href={links.linkedin} target={"_blank"} rel={"noopener noreferrer"}>
-                        <i className="fab fa-linkedin mx-2"/>
+                        <i className="fab fa-linkedin mx-2 hover:text-yellow-400"/>
                     </a>
                 </div>
             </div>
