@@ -13,9 +13,9 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({className}) => (
     <div className={className}>
         {Object.keys(translations).map(lng => (
             <img src={process.env.PUBLIC_URL + `/img/flag/${lng}.jpg`} key={lng}
-                 alt={lng + " flag"} title={lng == "fr" ? languageSwitchFr : languageSwitchEn}
-                 className="inline-flex m-2 w-6 h-6 rounded-full cursor-pointer"
-                 onClick={() => i18n.changeLanguage(lng)}/>
+                alt={lng + " flag"} title={lng == "fr" ? languageSwitchFr : languageSwitchEn}
+                className="inline-flex m-2 w-6 h-6 rounded-full cursor-pointer"
+                onClick={() => i18n.changeLanguage(lng)}/>
         ))}
     </div>
 )

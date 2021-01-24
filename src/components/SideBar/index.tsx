@@ -26,15 +26,15 @@ const SideBar: React.FC = () => {
 
             <nav className="mt-10 text-gray-100">
                 <Link to={RouteUrl.root}
-                      className={`flex items-center py-2 px-8 my-2 border-r-4 ${history.location.pathname === RouteUrl.root ? activeStateCss : desactiveStateCss}`}>
+                    className={`flex items-center py-2 px-8 my-2 border-r-4 ${history.location.pathname === RouteUrl.root ? activeStateCss : desactiveStateCss}`}>
                     <span className="mx-4">Portfolio</span>
                 </Link>
                 <Link to={RouteUrl.projects}
-                      className={`flex items-center py-2 px-8 border-r-4 ${history.location.pathname === RouteUrl.projects ? activeStateCss : desactiveStateCss}`}>
+                    className={`flex items-center py-2 px-8 border-r-4 ${history.location.pathname === RouteUrl.projects ? activeStateCss : desactiveStateCss}`}>
                     <span className="mx-4">{t("tab.projects")}</span>
                 </Link>
                 <Link to={RouteUrl.cv}
-                      className={`flex items-center py-2 px-8 mt-10 border-r-4 ${history.location.pathname === RouteUrl.cv ? activeStateCss : desactiveStateCss}`}>
+                    className={`flex items-center py-2 px-8 mt-10 border-r-4 ${history.location.pathname === RouteUrl.cv ? activeStateCss : desactiveStateCss}`}>
                     <span className="mx-4">{t("tab.cv")}</span>
                 </Link>
             </nav>
