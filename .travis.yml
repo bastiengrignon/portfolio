@@ -9,10 +9,12 @@ cache:
 script:
   - npm run build
 deploy:
-  strategy: git
-  provider: pages
-  skip_cleanup: true
-  token: $github_token
-  local_dir: build
-  on:
-    branch: main
+  - provider: pages
+    strategy: git
+    skip_cleanup: true
+    token: $github_token
+    local_dir: build
+    on:
+      branch: main
+  - provider: heroku
+    api_key: $heroku_token
