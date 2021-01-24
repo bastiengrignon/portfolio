@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "stable"
+os: linux
+dist: xenial
 cache:
   directories:
     - node_modules
@@ -8,10 +10,8 @@ script:
   - npm run build
 deploy:
   strategy: git
-  os: linux
   provider: pages
   cleanup: true
-  dist: xenial
   token: $github_token
   local_dir: build
   on:
