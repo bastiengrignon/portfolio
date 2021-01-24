@@ -7,9 +7,12 @@ cache:
 script:
   - npm run build
 deploy:
+  strategy: git
+  os: linux
   provider: pages
-  skip_cleanup: true
-  github_token: $github_token
+  cleanup: true
+  dist: xenial
+  token: $github_token
   local_dir: build
   on:
     branch: main
