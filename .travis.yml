@@ -11,7 +11,7 @@ script:
 deploy:
   strategy: git
   provider: pages
-  cleanup: true
+  skip_cleanup: true
   token: $github_token
   local_dir: build
   on:
