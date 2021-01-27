@@ -3,10 +3,7 @@ import {CareerProps} from "../../constants/career"
 
 const Timeline: React.FC<CareerProps> = ({date, title, description}) => {
     return (
-        <li className="inline-flex w-full py-6 pr-24 relative">
-            <div
-                className="absolute border-r-2 border-gray-400 border-dotted h-full z-0"
-                style={{marginLeft: "6.45rem"}}/>
+        <li className="inline-flex w-full py-6 pr-24">
             <div className="inline-flex items-start">
                 <div className="inline-flex items-center justify-between w-32">
                     <div className="text-gray-500 font-light italic whitespace-nowrap">{date}</div>
