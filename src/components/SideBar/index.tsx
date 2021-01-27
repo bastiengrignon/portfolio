@@ -8,7 +8,8 @@ const desactiveStateCss = "border-gray-800 hover:bg-gray-700 hover:border-gray-1
 const links = {
     email: "mailto:basgrignon@gmail.com",
     github: "https://github.com/bastiengrignon",
-    linkedin: "https://www.linkedin.com/in/bastien-grignon"
+    linkedin: "https://www.linkedin.com/in/bastien-grignon",
+    entrep: "https://www.lesentrep.fr"
 }
 
 const SideBar: React.FC = () => {
@@ -18,7 +19,8 @@ const SideBar: React.FC = () => {
         <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white">
             <Link to={RouteUrl.root}>
                 <div className="flex justify-center pt-10">
-                    <img src={process.env.PUBLIC_URL + "/img/profile-picture.jpg"} alt="Profile Picture" className="rounded-full w-48 h-48"/>
+                    <img src={process.env.PUBLIC_URL + "/img/profile-picture.jpg"}
+                        alt="Profile Picture" className="rounded-full w-48 h-48"/>
                 </div>
                 <div className="flex justify-center text-3xl uppercase mt-2">Bastien Grignon</div>
                 <div className="flex justify-center italic mt-3 text-sm">{t("current_job")}</div>
@@ -52,6 +54,12 @@ const SideBar: React.FC = () => {
                         <i className="fab fa-linkedin mx-2 hover:text-yellow-400"/>
                     </a>
                 </div>
+            </div>
+            <div className="bottom-0 absolute m-4">
+                <a href={links.entrep} target={"_blank"} rel={"noopener noreferrer"}>
+                    <img src={process.env.PUBLIC_URL + "/img/entrep.jpg"} alt="Logo Entrep"
+                        className="h-24 cursor-pointer"/>
+                </a>
             </div>
         </div>
     )
