@@ -151,7 +151,7 @@ const career: CareerProps[] = [
                     className="ml-5"/>
             </div>
         )
-    }/*,
+    },
     {
         date: "2014 - 2016",
         title: "Lycée Chevrollier Angers",
@@ -159,13 +159,12 @@ const career: CareerProps[] = [
             <div className="inline-flex items-center justify-between mr-10">
                 <p>
                     Obtention du bac STI2D option SIN (Système d&apos;Information et Numérique),
-                    mention
-                    bien
+                    mention bien
                 </p>
                 <img src={process.env.PUBLIC_URL + "/img/chevrollier.jpg"} alt="Lycee Chevrollier"
-                    className="w-32 h-32"/>
+                    className="w-32 h-32 ml-10"/>
             </div>
         )
-    }*/
+    }
 ]
 export default career
