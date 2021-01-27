@@ -1,14 +1,6 @@
 import React from "react"
 import {CareerProps} from "../../constants/career"
 
-const randomBackgroundColors = (): string => {
-    const colors: string[] = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]
-    const opacities: number[] = [300, 400, 500]
-    const randomColor: string = colors[Math.floor(Math.random() * colors.length)]
-    const randomOpacity: number = opacities[Math.floor(Math.random() * opacities.length)]
-    return `bg-${randomColor}-${randomOpacity}`
-}
-
 const Timeline: React.FC<CareerProps> = ({date, title, description}) => {
     return (
         <li className="inline-flex w-full py-6 pr-24 relative">
@@ -26,7 +18,7 @@ const Timeline: React.FC<CareerProps> = ({date, title, description}) => {
                     </span>
                 </div>
             </div>
-            <div className={`${randomBackgroundColors()} rounded-lg shadow-2xl ml-4 relative`}>
+            <div>
                 <div className="flex items-start pt-1 pl-5 text-3xl">
                     {title}
                 </div>
