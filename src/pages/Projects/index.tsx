@@ -4,7 +4,7 @@ import LanguageSelector from "../../components/LanguageSelector"
 
 const Projects: React.FC = () => (
     <div className="inline-flex w-full">
-        <LanguageSelector className="absolute top-0 right-0"/>
+        <LanguageSelector className="absolute top-0 right-0 z-10"/>
         <SideBar/>
         Project page
     </div>

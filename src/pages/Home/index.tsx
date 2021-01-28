@@ -6,7 +6,7 @@ import career from "../../constants/career"
 
 const Home: React.FC = () => (
     <div className="inline-flex w-full">
-        <LanguageSelector className="fixed top-0 right-0"/>
+        <LanguageSelector className="fixed top-0 right-0 z-10"/>
         <SideBar/>
         <div className="pl-96 h-full w-full pt-10">
             <p className="text-4xl uppercase text-gray-600 pb-5 px-5">Portfolio</p>
