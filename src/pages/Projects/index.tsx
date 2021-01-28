@@ -9,7 +9,7 @@ const Projects: React.FC = () => (
         <SideBar/>
         <div className="h-full w-full pl-96">
             <ul className="list-none">
-                <Project/>
+                <Project name={"Project Name"} description={"Description of this project"}/>
             </ul>
         </div>
     </div>

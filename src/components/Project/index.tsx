@@ -1,16 +1,22 @@
 import React from "react"
 
-const Project: React.FC = () => (
-    <li className="ml-5">
+interface ProjectProps {
+    name: string
+    description: string
+}
+
+const Project: React.FC<ProjectProps> = ({name , description}) => (
+    <li className="ml-5 mt-10">
         <div className="uppercase text-3xl">
-            Project Name
+            {name}
         </div>
         <div className="font-light text-xl">
-            Description of this project
+            {description}
         </div>
         <div className="text-base">
 
         </div>
+        <div className="border border-gray-300 w-5/6 mx-auto my-4"/>
     </li>
 )
 
