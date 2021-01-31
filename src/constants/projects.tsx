@@ -34,7 +34,7 @@ const projects: ProjectsProps[] = [
                         le tout à distance.
                     </p>
                 </div>
-                <div className={"font-semibold"}>
+                <div className="font-semibold">
                     Technologies :
                     {
                         ["Électronique"].map((value, i) => (
@@ -70,7 +70,7 @@ const projects: ProjectsProps[] = [
                         travers une API avec des endpoints définis.
                     </p>
                 </div>
-                <div className={"font-semibold"}>
+                <div className="font-semibold">
                     Technologies :
                     {
                         ["c/c++", "électronique", "Arduino"].map((value, i) => (
@@ -109,7 +109,7 @@ const projects: ProjectsProps[] = [
                             alt={`${projectFolder}/ihm_pc.png`}/>
                     </div>
                 </div>
-                <div className={"font-semibold"}>
+                <div className="font-semibold">
                     Technologies :
                     {
                         ["c/c++", "Qt", "Électronique", "LoRa"].map((value, i) => (
@@ -143,7 +143,7 @@ const projects: ProjectsProps[] = [
                         <i className="fas fa-external-link-alt ml-2"/>
                     </a>
                 </div>
-                <div className={"font-semibold"}>
+                <div className="font-semibold">
                     Technologies :
                     {
                         ["React", "Typescript", "TailwindCSS", "Heroku"].map((value, i) => (

@@ -27,8 +27,8 @@ const career: CareerProps[] = [
                             <span className="italic"> Javascript</span> qu&apos;en <span
                                 className="italic">TypeScript</span>.
                         </p>
-                        <div className="mt-5">
-                            <p className="font-bold">Technologies étudiées :</p>
+                        <div className="mt-5 font-semibold text-left">
+                            Technologies étudiées :
                             {
                                 ["c/c++", "Java", "Spring", "html / css / js / php / mysql", "React", "aws", "git", "bash", "Typescript"].map((value, i) => (
                                     <Tag key={i} text={value}/>
@@ -49,8 +49,8 @@ const career: CareerProps[] = [
                             aidé
                             est l&apos;attache d&apos;un mobile à une antenne.
                         </p>
-                        <div className="mt-5">
-                            <p className="font-bold">Technologies étudiées :</p>
+                        <div className="mt-5 font-semibold">
+                            Technologies étudiées :
                             {
                                 ["c/c++", "bash", "git", "gerrit"].map((value, i) => (
                                     <Tag key={i} text={value}/>
@@ -84,8 +84,8 @@ const career: CareerProps[] = [
                         composants et eu l&apos;occasion de souder moi-même tous les composants sur
                         cette carte. Ce stage a été très formateur
                     </p>
-                    <div className="mt-5">
-                        <p className="font-bold">Technologies étudiées :</p>
+                    <div className="mt-5 font-semibold">
+                        Technologies étudiées :
                         {
                             ["c/c++", "électronique", "LoRa", "Capteur à Ultrasons"].map((value, i) => (
                                 <Tag key={i} text={value}/>
@@ -116,8 +116,8 @@ const career: CareerProps[] = [
                         Tout au long de ce parcours, j&apos;ai pu apprendre beaucoup de choses dans
                         les domaines de l&apos;informatique ainsi que de l&apos;électronique
                     </p>
-                    <div className="mt-5">
-                        <p className="font-bold">Technologies étudiées :</p>
+                    <div className="mt-5 font-semibold">
+                        Technologies étudiées :
                         {
                             ["html", "css", "js", "c/c++", "php", "mysql", "java"].map((value, i) => (
                                 <Tag key={i} text={value} className="text-red-900"/>
