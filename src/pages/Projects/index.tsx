@@ -2,6 +2,7 @@ import React from "react"
 import SideBar from "../../components/SideBar"
 import LanguageSelector from "../../components/LanguageSelector"
 import Project from "../../components/Project"
+import projects from "../../constants/projects"
 
 const Projects: React.FC = () => (
     <div className="inline-flex w-full">
@@ -9,7 +10,11 @@ const Projects: React.FC = () => (
         <SideBar/>
         <div className="h-full w-full pl-96">
             <ul className="list-none">
-                <Project name={"Project Name"} description={"Description of this project"}/>
+                {
+                    projects.map((project, i) => (
+                        <Project key={i} name={project.name} description={project.description} img={project.img}/>
+                    ))
+                }
             </ul>
         </div>
     </div>
