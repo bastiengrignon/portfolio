@@ -7,13 +7,15 @@ export interface CareerProps {
     description: string | ReactNode
 }
 
+const careerFolder = `${process.env.PUBLIC_URL}/img/career`
+
 const career: CareerProps[] = [
     {
         date: "2018 - Now",
         title: "Alternant Ingénieur logiciel 5G chez Nokia",
         description: (
-            <div className="flex flex-col mr-10">
-                <div className="inline-flex items-center text-justify justify-between">
+            <div className="flex flex-col mr-10 w-full">
+                <div className="inline-flex items-center text-justify justify-between w-full">
                     <div>
                         <p>
                             Je suis actuellement en école d&apos;ingénieur en alternance à
@@ -29,13 +31,12 @@ const career: CareerProps[] = [
                             <p className="font-bold">Technologies étudiées :</p>
                             {
                                 ["c/c++", "Java", "Spring", "html / css / js / php / mysql", "React", "aws", "git", "bash", "Typescript"].map((value, i) => (
-                                    <Tag key={i} text={value} className="mx-2"/>
+                                    <Tag key={i} text={value}/>
                                 ))
                             }
                         </div>
                     </div>
-                    <img src={process.env.PUBLIC_URL + "/img/isep.jpg"} alt="Logo ISEP"
-                        className="w-32 ml-5"/>
+                    <img src={`${careerFolder}/isep.jpg`} alt="Logo ISEP" className="w-32 ml-5"/>
                 </div>
                 <div className="inline-flex items-center text-justify justify-between">
                     <div>
@@ -52,13 +53,12 @@ const career: CareerProps[] = [
                             <p className="font-bold">Technologies étudiées :</p>
                             {
                                 ["c/c++", "bash", "git", "gerrit"].map((value, i) => (
-                                    <Tag key={i} text={value} className="mx-2"/>
+                                    <Tag key={i} text={value}/>
                                 ))
                             }
                         </div>
                     </div>
-                    <img src={process.env.PUBLIC_URL + "/img/nokia.jpg"} alt="Logo Nokia"
-                        className="w-32 ml-5"/>
+                    <img src={`${careerFolder}/nokia.jpg`} alt="Logo Nokia" className="w-32 ml-5"/>
                 </div>
             </div>
         )
@@ -67,7 +67,7 @@ const career: CareerProps[] = [
         date: "2018",
         title: "Stage en Bureau d'étude électronique InES",
         description: (
-            <div className="inline-flex items-center text-justify justify-between mr-10">
+            <div className="inline-flex items-center text-justify justify-between mr-10 w-full">
                 <div>
                     <p>
                         Stage de 12 semaines dans le cadre de l&apos;IUT prolongé par un CDD pour
@@ -88,15 +88,15 @@ const career: CareerProps[] = [
                         <p className="font-bold">Technologies étudiées :</p>
                         {
                             ["c/c++", "électronique", "LoRa", "Capteur à Ultrasons"].map((value, i) => (
-                                <Tag key={i} text={value} className="mx-2"/>
+                                <Tag key={i} text={value}/>
                             ))
                         }
                     </div>
                 </div>
                 <div>
-                    <img src={process.env.PUBLIC_URL + "/img/ines.png"} alt="Logo InEs"
+                    <img src={`${careerFolder}/ines.png`} alt="Logo InEs"
                         className="w-56 ml-5 my-2"/>
-                    <img src={process.env.PUBLIC_URL + "/img/sensor_case.jpg"} alt="Sensor Case"
+                    <img src={`${careerFolder}/sensor_case.jpg`} alt="Sensor Case"
                         className="w-56 ml-5"/>
                 </div>
             </div>
@@ -106,7 +106,7 @@ const career: CareerProps[] = [
         date: "2016 - 2018",
         title: "IUT GEII Angers",
         description: (
-            <div className="inline-flex items-center text-justify justify-between mr-10">
+            <div className="inline-flex items-center text-justify justify-between mr-10 w-full">
                 <div>
                     <p>
                         Au termes de mes deux années de DUT à Angers, j&apos;ai obtenu mon DUT Génie
@@ -125,7 +125,7 @@ const career: CareerProps[] = [
                         }
                     </div>
                 </div>
-                <img src={process.env.PUBLIC_URL + "/img/iut-angers.jpg"} alt="Logo IUT Angers"
+                <img src={`${careerFolder}/iut-angers.jpg`} alt="Logo IUT Angers"
                     className="w-48 ml-5"/>
             </div>
         )
@@ -134,7 +134,7 @@ const career: CareerProps[] = [
         date: "2016 - 2018",
         title: "Entraineur de Tennis",
         description: (
-            <div className="inline-flex items-center text-justify mr-10">
+            <div className="inline-flex items-center text-justify mr-10 w-full">
                 <div>
                     <p className="pb-4">{"Durant mon année de Terminale, en parallèle des cours" +
                     " j'ai passé une formation d'initiateur de Tennis. Celle-ci m'a permis" +
@@ -147,8 +147,7 @@ const career: CareerProps[] = [
                         " entre 8 et 15 ans au TCA (Tennis Club Authion)"}
                     </p>
                 </div>
-                <img src={process.env.PUBLIC_URL + "/img/tennis.jpg"} alt="Tennis Club TCA"
-                    className="ml-5"/>
+                <img src={`${careerFolder}/tennis.jpg`} alt="Tennis Club TCA" className="ml-5"/>
             </div>
         )
     },
@@ -156,12 +155,12 @@ const career: CareerProps[] = [
         date: "2014 - 2016",
         title: "Lycée Chevrollier Angers",
         description: (
-            <div className="inline-flex items-center justify-between mr-10">
+            <div className="inline-flex items-center justify-between mr-10 w-full">
                 <p>
                     Obtention du bac STI2D option SIN (Système d&apos;Information et Numérique),
                     mention bien
                 </p>
-                <img src={process.env.PUBLIC_URL + "/img/chevrollier.jpg"} alt="Lycee Chevrollier"
+                <img src={`${careerFolder}/chevrollier.jpg`} alt="Lycee Chevrollier"
                     className="w-32 h-32 ml-10"/>
             </div>
         )
