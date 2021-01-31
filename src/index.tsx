@@ -7,10 +7,10 @@ import {
 } from "react-router-dom"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
+import CV from "./pages/CV"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import RouteUrl from "./constants/RouteUrl"
 import "./i18n"
-import CV from "./pages/CV"
 
 
 const App: React.FC = () => (

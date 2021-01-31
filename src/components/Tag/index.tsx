@@ -15,7 +15,7 @@ interface TagProps {
     className?: string
 }
 
-const Tag: React.FC<TagProps> = ({text, color = TagColor.blue, icon = <i className="fas fa-arrow-right"/>}, className = "") => {
+const Tag: React.FC<TagProps> = ({text, color = TagColor.blue, icon = <i className="fas fa-arrow-right"/>, className = ""}) => {
     return (
         <div
             className={`text-xs inline-flex items-baseline font-bold leading-sm uppercase px-3 py-1 mx-1
