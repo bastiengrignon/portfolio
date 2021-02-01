@@ -12,7 +12,7 @@ const Projects: React.FC = () => (
             <ul className="list-none">
                 {
                     projects.map((project, i) => (
-                        <Project key={i} name={project.name} description={project.description} img={project.img}/>
+                        <Project key={i} name={project.name} description={project.description} img={project.img} tagList={project.tagList}/>
                     ))
                 }
             </ul>
