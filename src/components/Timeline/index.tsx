@@ -1,7 +1,10 @@
 import React from "react"
 import {CareerProps} from "../../constants/career"
+import Tag from "../Tag"
+import {useTranslation} from "react-i18next"
 
-const Timeline: React.FC<CareerProps> = ({date, title, description}) => {
+const Timeline: React.FC<CareerProps> = ({date, title, description, techList}) => {
+    const {t} = useTranslation()
     return (
         <li className="inline-flex w-full py-6 pr-24">
             <div className="inline-flex items-start">
@@ -20,7 +23,17 @@ const Timeline: React.FC<CareerProps> = ({date, title, description}) => {
                     {title}
                 </div>
                 <div className="ml-12 pb-4 pr-4">
-                    {description}
+                    <div>{description}</div>
+                    {
+                        techList && <div className="font-semibold mt-4 text-left">
+                            {t("study_tech")}
+                            {
+                                techList.map((value, i) => (
+                                    <Tag key={i} text={value}/>
+                                ))
+                            }
+                        </div>
+                    }
                 </div>
             </div>
         </li>

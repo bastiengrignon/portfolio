@@ -17,7 +17,7 @@ const Home: React.FC = () => (
                 {
                     career.map((job, i) => (
                         <div key={i}>
-                            <Timeline date={job.date} title={job.title} description={job.description} />
+                            <Timeline date={job.date} title={job.title} description={job.description} techList={job.techList} />
                             <div className="border border-gray-300 w-4/5 mx-auto my-2"/>
                         </div>
 
