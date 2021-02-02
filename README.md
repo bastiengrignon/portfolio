@@ -7,8 +7,8 @@
 ![i18next](https://img.shields.io/github/package-json/dependency-version/bastiengrignon/portfolio/i18next)  
 
 
-![GitHub issues](https://img.shields.io/github/issues-raw/bastiengrignon/portfolio)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/bastiengrignon/portfolio)  
+[![GitHub issues](https://img.shields.io/github/issues-raw/bastiengrignon/portfolio)](https://github.com/bastiengrignon/portfolio/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/bastiengrignon/portfolio)](https://github.com/bastiengrignon/portfolio/pulls)  
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/bastiengrignon/portfolio)
 
