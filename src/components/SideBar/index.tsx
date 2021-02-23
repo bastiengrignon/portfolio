@@ -1,5 +1,5 @@
 import React from "react"
-import {Link, useHistory} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import RouteUrl from "../../constants/RouteUrl"
 import {useTranslation} from "react-i18next"
 
@@ -14,7 +14,6 @@ const links = {
 
 const SideBar: React.FC = () => {
     const {t} = useTranslation()
-    const history = useHistory()
     return (
         <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white">
             <Link to={RouteUrl.root}>
@@ -27,18 +26,18 @@ const SideBar: React.FC = () => {
             </Link>
 
             <nav className="mt-10 text-gray-100">
-                <Link to={RouteUrl.root}
-                    className={`flex items-center py-2 px-8 my-2 border-r-4 ${history.location.pathname === RouteUrl.root ? activeStateCss : desactiveStateCss}`}>
+                <NavLink to={RouteUrl.root} activeClassName={activeStateCss} exact={true}
+                    className={`flex items-center py-2 px-8 my-2 border-r-4 ${desactiveStateCss}`}>
                     <span className="mx-4">Portfolio</span>
-                </Link>
-                <Link to={RouteUrl.projects}
-                    className={`flex items-center py-2 px-8 border-r-4 ${history.location.pathname === RouteUrl.projects ? activeStateCss : desactiveStateCss}`}>
+                </NavLink>
+                <NavLink to={RouteUrl.projects} activeClassName={activeStateCss}
+                    className={`flex items-center py-2 px-8 border-r-4 ${desactiveStateCss}`}>
                     <span className="mx-4">{t("tab.projects")}</span>
-                </Link>
-                <Link to={RouteUrl.cv}
-                    className={`flex items-center py-2 px-8 mt-10 border-r-4 ${history.location.pathname === RouteUrl.cv ? activeStateCss : desactiveStateCss}`}>
+                </NavLink>
+                <NavLink to={RouteUrl.cv} activeClassName={activeStateCss}
+                    className={`flex items-center py-2 px-8 mt-10 border-r-4 ${desactiveStateCss}`}>
                     <span className="mx-4">{t("tab.cv")}</span>
-                </Link>
+                </NavLink>
             </nav>
 
             <div className="mt-10 mx-4 text-white text-2xl">
