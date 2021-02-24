@@ -1,7 +1,8 @@
-import React from "react"
+import React, {useState} from "react"
 import {Link, NavLink} from "react-router-dom"
 import RouteUrl from "../../constants/RouteUrl"
 import {useTranslation} from "react-i18next"
+import {motion} from "framer-motion"
 
 const activeStateCss = "border-gray-100 bg-gray-700"
 const desactiveStateCss = "border-gray-800 hover:bg-gray-700 hover:border-gray-100"
@@ -13,7 +14,11 @@ const links = {
 }
 
 const SideBar: React.FC = () => {
+    const [isMailActive, setIsMailActive] = useState<boolean>(false)
+    const [isGithubActive, setIsGithubActive] = useState<boolean>(false)
+    const [isLinkedinActive, setIsLinkedinActive] = useState<boolean>(false)
     const {t} = useTranslation()
+
     return (
         <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white">
             <Link to={RouteUrl.root}>
@@ -44,13 +49,36 @@ const SideBar: React.FC = () => {
                 <span className="text-base">{t("contact")}</span>
                 <div className="text-3xl">
                     <a href={links.email} rel={"noopener noreferrer"}>
-                        <i className="fas fa-envelope mx-2 hover:text-yellow-400 transform hover:scale-110"/>
+                        <motion.div
+                            onHoverStart={() => setIsMailActive(true)}
+                            onHoverEnd={() => setIsMailActive(false)}
+                            className="fas fa-envelope mx-2 hover:text-yellow-400 transform hover:scale-110"
+                            animate={{
+                                scale: isMailActive ? 1.5 : 1,
+                                rotate: isMailActive ? 360 : 0
+                            }}/>
                     </a>
                     <a href={links.github} target={"_blank"} rel={"noopener noreferrer"}>
-                        <i className="fab fa-github mx-2 hover:text-yellow-400 transform hover:scale-110"/>
+                        <motion.div
+                            onHoverStart={() => setIsGithubActive(true)}
+                            onHoverEnd={() => setIsGithubActive(false)}
+                            className="fab fa-github-square mx-2 hover:text-yellow-400 transform hover:scale-110"
+                            transition={{duration: 0.3}}
+                            animate={{
+                                scale: isGithubActive ? 1.5 : 1,
+                                rotate: isGithubActive ? 360 : 0
+                            }}/>
                     </a>
                     <a href={links.linkedin} target={"_blank"} rel={"noopener noreferrer"}>
-                        <i className="fab fa-linkedin mx-2 hover:text-yellow-400 transform hover:scale-110"/>
+                        <motion.div
+                            onHoverStart={() => setIsLinkedinActive(true)}
+                            onHoverEnd={() => setIsLinkedinActive(false)}
+                            className="fab fa-linkedin mx-2 hover:text-yellow-400 transform hover:scale-110"
+                            transition={{duration: 0.3}}
+                            animate={{
+                                scale: isLinkedinActive ? 1.5 : 1,
+                                rotate: isLinkedinActive ? 360 : 0
+                            }}/>
                     </a>
                 </div>
             </div>
