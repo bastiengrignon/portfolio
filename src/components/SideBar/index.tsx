@@ -40,17 +40,17 @@ const SideBar: React.FC = () => {
                 </NavLink>
             </nav>
 
-            <div className="mt-10 mx-4 text-white text-2xl">
-                <span className="text-sm">{t("contact")}</span>
-                <div>
+            <div className="mt-10 mx-4 text-white">
+                <span className="text-base">{t("contact")}</span>
+                <div className="text-3xl">
                     <a href={links.email} rel={"noopener noreferrer"}>
-                        <i className="fas fa-envelope mx-2 hover:text-yellow-400"/>
+                        <i className="fas fa-envelope mx-2 hover:text-yellow-400 transform hover:scale-110"/>
                     </a>
                     <a href={links.github} target={"_blank"} rel={"noopener noreferrer"}>
-                        <i className="fab fa-github mx-2 hover:text-yellow-400"/>
+                        <i className="fab fa-github mx-2 hover:text-yellow-400 transform hover:scale-110"/>
                     </a>
                     <a href={links.linkedin} target={"_blank"} rel={"noopener noreferrer"}>
-                        <i className="fab fa-linkedin mx-2 hover:text-yellow-400"/>
+                        <i className="fab fa-linkedin mx-2 hover:text-yellow-400 transform hover:scale-110"/>
                     </a>
                 </div>
             </div>
