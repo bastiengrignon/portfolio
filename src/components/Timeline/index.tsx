@@ -2,6 +2,7 @@ import React from "react"
 import Tag from "../Tag"
 import {useTranslation} from "react-i18next"
 import {careerFolder, CareerProps} from "../../pages/Home"
+import Ping from "../Ping"
 
 const Timeline: React.FC<CareerProps> = ({date, title, description, techList}) => {
     const {t} = useTranslation()
@@ -10,12 +11,7 @@ const Timeline: React.FC<CareerProps> = ({date, title, description, techList}) =
             <div className="inline-flex items-start">
                 <div className="inline-flex items-start justify-between w-32">
                     <div className="text-gray-500 font-light italic flex-wrap w-20">{date}</div>
-                    <span className="h-4 w-4 z-10 mx-4">
-                        <span
-                            className="absolute rounded-full h-4 w-4 bg-blue-600 border-2 border-gray-200"/>
-                        <span
-                            className="absolute rounded-full h-4 w-4 bg-blue-400 opacity-75 animate-ping"/>
-                    </span>
+                    <Ping/>
                 </div>
             </div>
             <div>
