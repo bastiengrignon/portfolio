@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "description": "My portfolio to show my career and projects",
   "private": true,
-  "homepage": "http://bastiengrignon.github.io/portfolio",
   "author": {
     "name": "Bastien Grignon",
     "email": "basgrignon@gmail.com",
