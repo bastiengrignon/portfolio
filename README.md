@@ -1,5 +1,7 @@
 [![Travis (.com)](https://img.shields.io/travis/com/bastiengrignon/portfolio?logo=travis)](https://travis-ci.com/bastiengrignon/portfolio)
-[![GitHub deployments](https://img.shields.io/github/deployments/bastiengrignon/portfolio/portfolio-grignon?color=430098&label=Heroku%20deployment&logo=heroku)](https://portfolio-grignon.herokuapp.com)  
+[![GitHub deployments](https://img.shields.io/github/deployments/bastiengrignon/portfolio/portfolio-grignon?color=430098&label=Heroku%20deployment&logo=heroku)](https://portfolio-grignon.herokuapp.com)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=portfolio)  
+
 ![tailwindcss](https://img.shields.io/github/package-json/dependency-version/bastiengrignon/portfolio/tailwindcss?label=%20&logo=tailwind-css) 
 ![react](https://img.shields.io/github/package-json/dependency-version/bastiengrignon/portfolio/react?color=fefefe&label=%20&logo=react) 
 ![typescript](https://img.shields.io/github/package-json/dependency-version/bastiengrignon/portfolio/typescript?color=fefefe&label=%20&logo=typescript&logoColor=3178C6)
