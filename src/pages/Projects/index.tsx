@@ -3,7 +3,7 @@ import Project from "../../components/Project"
 import projects from "../../constants/projects"
 
 const Projects: React.FC = () => (
-    <div className="inline-flex w-full">
+    <div className="inline-flex w-full dark:bg-gray-900 dark:text-white">
         <div className="h-full w-full pl-96">
             <p className="m-10 text-2xl font-medium">
                 Vous pouvez retrouver tous les projets personnels et publics auquel j&apos;ai pu

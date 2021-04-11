@@ -2,7 +2,7 @@ import React from "react"
 
 const CV: React.FC = () => {
     return (
-        <div className="h-full w-full mt-4">
+        <div className="h-screen w-full dark:bg-gray-900">
             <div className="pl-96 h-full w-screen">
                 <object width="1000" height="900"
                     data={process.env.PUBLIC_URL + "/doc/CV_Bastien_Grignon.pdf"}

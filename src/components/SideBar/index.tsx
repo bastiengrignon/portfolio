@@ -4,8 +4,9 @@ import RouteUrl from "../../constants/RouteUrl"
 import {useTranslation} from "react-i18next"
 import {motion} from "framer-motion"
 
-const activeStateCss = "border-gray-100 bg-gray-700"
-const desactiveStateCss = "border-gray-800 hover:bg-gray-700 hover:border-gray-100"
+const activeStateCss = "bg-gray-700 border-none"
+const desactiveStateCss = "border-r-8 border-gray-800 hover:bg-gray-700" +
+    " hover:border-gray-200 dark:border-gray-400 dark:hover:border-gray-200"
 const links = {
     email: "mailto:basgrignon@gmail.com",
     github: "https://github.com/bastiengrignon",
@@ -20,7 +21,7 @@ const SideBar: React.FC = () => {
     const {t} = useTranslation()
 
     return (
-        <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white">
+        <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white dark:bg-gray-400 dark:text-text-gray-900">
             <Link to={RouteUrl.root}>
                 <div className="flex justify-center pt-10">
                     <img src={process.env.PUBLIC_URL + "/img/profile-picture.jpg"}
@@ -32,15 +33,15 @@ const SideBar: React.FC = () => {
 
             <nav className="mt-10 text-gray-100">
                 <NavLink to={RouteUrl.root} activeClassName={activeStateCss} exact={true}
-                    className={`flex items-center py-2 px-8 my-2 border-r-4 ${desactiveStateCss}`}>
+                    className={`flex items-center py-2 px-8 my-2 ${desactiveStateCss}`}>
                     <span className="mx-4">Portfolio</span>
                 </NavLink>
                 <NavLink to={RouteUrl.projects} activeClassName={activeStateCss}
-                    className={`flex items-center py-2 px-8 border-r-4 ${desactiveStateCss}`}>
+                    className={`flex items-center py-2 px-8 ${desactiveStateCss}`}>
                     <span className="mx-4">{t("tab.projects")}</span>
                 </NavLink>
                 <NavLink to={RouteUrl.cv} activeClassName={activeStateCss}
-                    className={`flex items-center py-2 px-8 mt-10 border-r-4 ${desactiveStateCss}`}>
+                    className={`flex items-center py-2 px-8 mt-10 ${desactiveStateCss}`}>
                     <span className="mx-4">{t("tab.cv")}</span>
                 </NavLink>
             </nav>

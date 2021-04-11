@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* The switch - the box around the slider */
+.switch {
+    @apply relative inline-block w-14 h-6;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    @apply opacity-0 w-0 h-0
+}
+
+/* The slider */
+.slider {
+    @apply absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-gray-400 transition duration-300 ease-in-out;
+}
+
+.slider:before {
+    @apply absolute h-4 w-4 bg-white left-1 bottom-1 transition duration-300;
+    content: "";
+}
+
+input:checked + .slider {
+    @apply bg-blue-400;
+}
+
+input:focus + .slider {
+    @apply shadow-lg;
+}
+
+input:checked + .slider:before {
+    @apply transform translate-x-8;
+}
+
+.slider.round {
+    /*border-radius: 34px;*/
+    @apply rounded-full;
+}
+
+.slider.round:before {
+    /*border-radius: 50%;*/
+    @apply rounded-full;
+
+}

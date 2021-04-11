@@ -10,7 +10,7 @@ const Timeline: React.FC<CareerProps> = ({date, title, description, techList}) =
         <li className="inline-flex w-full py-6 pr-24">
             <div className="inline-flex items-start">
                 <div className="inline-flex items-start justify-between w-32">
-                    <div className="text-gray-500 font-light italic flex-wrap w-20">{date}</div>
+                    <div className="text-gray-500 font-light italic flex-wrap w-20 dark:text-gray-200">{date}</div>
                     <Ping/>
                 </div>
             </div>

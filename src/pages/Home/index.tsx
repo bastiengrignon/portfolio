@@ -119,13 +119,13 @@ const Home: React.FC = () => {
         }
     ]
     return (
-        <div className="inline-flex w-full">
+        <div className="inline-flex dark:bg-gray-900 dark:text-white">
             <div className="pl-96 h-full w-full pt-10">
-                <p className="text-4xl uppercase text-gray-600 pb-5 px-5">Portfolio</p>
+                <p className="p-5 text-4xl uppercase text-gray-600 dark:text-gray-300">Portfolio</p>
                 <ul className="list-none px-10 relative">
                     <div
-                        className="absolute border-r-2 border-gray-400 border-dotted h-full z-0 mt-7"
-                        style={{marginLeft: "6.44rem"}}/>
+                        className="absolute border-r-2 border-gray-400 border-dotted z-0 mt-7"
+                        style={{marginLeft: "6.44rem", height: "calc(100% - 1.75rem)"}}/>
                     {
                         career.map((job, i) => (
                             <div key={i}>
