@@ -5,6 +5,7 @@ import {
     Route,
     Switch
 } from "react-router-dom"
+import "./index.css"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import CV from "./pages/CV"
