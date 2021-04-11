@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                 />,
                 images: [
                     {
-                        src: "isep.jpg",
+                        src: "ISEP.jpg",
                         alt: "Logo ISEP",
                         className: "w-32 mb-2"
                     },
