@@ -41,13 +41,13 @@ const Tag: React.FC<TagProps> = ({
     const convertTextColorToTailwindColor = (color: TagColor): string => {
         switch (color) {
             case TagColor.blue:
-                return "text-blue-200"
+                return "text-blue-700"
             case TagColor.green:
-                return "text-green-200"
+                return "text-green-700"
             case TagColor.yellow:
-                return "text-yellow-200"
+                return "text-yellow-700"
             case TagColor.red:
-                return "text-red-200"
+                return "text-red-700"
             default:
                 console.error("Color not found")
                 return ""
