@@ -20,6 +20,7 @@
     "url": "https://github.com/bastiengrignon/portfolio/"
   },
   "dependencies": {
+    "@craco/craco": "^6.1.1",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@testing-library/jest-dom": "^5.11.4",
@@ -47,15 +48,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "prestart": "npm run build:tailwind",
-    "prebuild": "npm run build:tailwind",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:tailwind": "tailwindcss build public/css/tailwind.css -c tailwind.config.js -o public/css/tailwind-index.css"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
