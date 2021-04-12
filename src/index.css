@@ -44,3 +44,21 @@ input:checked + .slider:before {
     @apply rounded-full;
 
 }
+
+*::-webkit-scrollbar {
+    @apply w-1.5;
+}
+
+*::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-blue-400;
+    border: 1px solid transparent;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: bg-blue-400 transparent;
+}
