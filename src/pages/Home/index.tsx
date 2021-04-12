@@ -118,8 +118,9 @@ const Home: React.FC = () => {
             }
         }
     ]
+
     return (
-        <div className="inline-flex dark:bg-gray-900 dark:text-white">
+        <div className="inline-flex dark:bg-gray-800 dark:text-white">
             <div className="pl-96 h-full w-full pt-10">
                 <p className="p-5 text-4xl uppercase text-gray-600 dark:text-gray-300">Portfolio</p>
                 <ul className="list-none px-10 relative">

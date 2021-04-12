@@ -4,9 +4,9 @@ import RouteUrl from "../../constants/RouteUrl"
 import {useTranslation} from "react-i18next"
 import {motion} from "framer-motion"
 
-const activeStateCss = "bg-gray-700 border-none"
+const activeStateCss = "bg-gray-700 border-none dark:bg-gray-500"
 const desactiveStateCss = "border-r-8 border-gray-800 hover:bg-gray-700" +
-    " hover:border-gray-200 dark:border-gray-400 dark:hover:border-gray-200"
+    " hover:border-gray-200 dark:border-gray-700 dark:hover:border-gray-200 dark:hover:bg-gray-500"
 const links = {
     email: "mailto:basgrignon@gmail.com",
     github: "https://github.com/bastiengrignon",
@@ -21,7 +21,7 @@ const SideBar: React.FC = () => {
     const {t} = useTranslation()
 
     return (
-        <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white dark:bg-gray-400 dark:text-text-gray-900">
+        <div className="w-96 fixed top-0 bottom-0 bg-gray-800 text-white dark:bg-gray-700 dark:text-text-gray-900">
             <Link to={RouteUrl.root}>
                 <div className="flex justify-center pt-10">
                     <img src={process.env.PUBLIC_URL + "/img/profile-picture.jpg"}
