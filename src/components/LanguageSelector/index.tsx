@@ -10,7 +10,7 @@ interface LanguageSelectorProps {
 }
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({className}) => (
-    <div className={className}>
+    <div className={`space-x-1.5 ${className}`}>
         {Object.keys(translations).map(lng => (
             <img src={process.env.PUBLIC_URL + `/img/flag/${lng}.jpg`} key={lng}
                 alt={lng + " flag"} title={lng == "fr" ? languageSwitchFr : languageSwitchEn}

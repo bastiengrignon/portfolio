@@ -32,8 +32,10 @@ const App: React.FC = () => {
     return (
         <div className={getDarkMode() ? "dark" : ""}>
             <Router>
-                <div className="fixed top-0 right-0 z-10 inline-flex items-center">
-                    <ToggleSwitch checked={getDarkMode()} onChange={setDarkMode}/>
+                <div className="fixed top-0 right-0 z-10 inline-flex items-center space-x-1.5">
+                    <ToggleSwitch checked={getDarkMode()} onChange={setDarkMode}
+                        checkedChildren={<i className="fas fa-moon text-yellow-300"/>}
+                        unCheckedChildren={<i className="fas fa-sun text-yellow-300"/>}/>
                     <LanguageSelector/>
                 </div>
                 <SideBar/>
