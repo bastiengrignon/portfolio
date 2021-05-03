@@ -1,0 +1,29 @@
+{
+  "career": [
+    {
+      "date": "2018 - Now",
+      "title": "Sandwich training as 5G software engineer at Nokia",
+      "description": "I'm currently in an Engineer School in sandwich training at ISEP major in <bold>Software Engineer</bold>. I was able to carry out many projects during this 3 years. Both in computer science and electronics, I was able to complete website projects with basic technologies (html/css/js/php) but also using <bold>React</span>, both in <italic>Javascript</italic> and <italic>TypeScript</italic>.<newline/> I work at Nokia as a 5G Software Engineer on the development of the <bold>5G</bold>. My work within the team consists in developing and implementing new features. One of the major feature i've worked on, is the connection of a mobile to an antenna. I mainly work on the management of the messages/exchanges between the various parts of the software to then, be able to exchange data between the mobile and the network."
+    },
+    {
+      "date": "2018",
+      "title": "Internship in an Electronic design office at InES",
+      "description": "12 weeks internship for my University Technical Degree validation, it goes really well and have been extended to the end of summer vacation.<newline/> During this internship, I was able to deepen my knowledge in <bold>C/C++ development</bold>, I've been able to work from the very start to the end of this project, it means that I was the one who created the PCB (Printed Circuit Board), I choose all the different components and solder them on the board. This internship was highly formative"
+    },
+    {
+      "date": "2016 - 2018",
+      "title": "IUT GEII Angers",
+      "description": "At the end of these 2 years in Angers, I successfully passed my University Technology Degree major in computer science.<newline/> Throughout theses years of school, I learnt a lot in many fields but especially in electronics and computer science"
+    },
+    {
+      "date": "2016 - 2018",
+      "title": "Tennis coach",
+      "description": "During my last year of High-School, in parallel with school lessons, I passed a tennis coach training. This formation allows me to give training as a volunteer, giving me the opportunity to help my club as well as my coach to do lessons with youth.<newline/> So, for 2 years, I've been able to train young people and help my trainer during events organized by the club (like tournament for example). These young people had between 8 and 15 years old and were licensee at TCA (Tennis Club Authion)"
+    },
+    {
+      "date": "2014 - 2016",
+      "title": "Chevrollier High School",
+      "description": "High-School Degree, major in computer science with honors"
+    }
+  ]
+}

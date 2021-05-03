@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "stable"
+os: linux
+dist: xenial
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run build
+deploy:
+  provider: pages
+  strategy: git
+  skip_cleanup: true
+  token: $github_token
+  name: Deployment Bot
+  on:
+    branch: main

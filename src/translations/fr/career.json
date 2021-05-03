@@ -1,0 +1,29 @@
+{
+  "career": [
+    {
+      "date": "2018 - Aujourd'hui",
+      "title": "Alternant Ingénieur logiciel 5G chez Nokia",
+      "description": "Je suis actuellement en école d'ingénieur en alternance à l'ISEP dans le cursus <bold>Ingénieur logiciel</bold>. J'ai pu réaliser différents projets pendant ces 3 années. En informatique et électronique, j'ai pu effectuer des projets de site Web avec des technologies de bases (html/css/js/php) mais aussi en utilisant <bold>React</span>, aussi bien en <italic> Javascript</italic> qu'en <italic>TypeScript</italic>.<newline/>Je travaille chez Nokia en tant qu'ingénieur logiciel sur le développement de la <bold>5G</bold>. Mon travail au sein de l'équipe consiste à développer et implémenter de nouvelles fonctionnalités. Une de ces fonctionnalités pour lequel j'ai pu aidé est l'attache d'un mobile à une antenne. Je travaille principalement sur la partie du logiciel qui gère les messages/échanges entre les différentes parties du logiciel pour pouvoir ensuite échanger des données entre le mobile et le réseau"
+    },
+    {
+      "date": "2018",
+      "title": "Stage en Bureau d'étude électronique InES",
+      "description": "Stage de 12 semaines dans le cadre de l'IUT prolongé par un CDD pour l'été en conception et développement informatique.<newline/> Durant ce stage j'ai approfondi mes connaissances en <bold>développement C/C++</bold>, de plus, j'ai pu travailler sur un projet du début à la fin, c'est à dire que j'ai créer moi-même la carte électronique, j'ai choisi les composants et eu l'occasion de souder moi-même tous les composants sur cette carte. Ce stage a été très formateur."
+    },
+    {
+      "date": "2016 - 2018",
+      "title": "IUT GEII Angers",
+      "description": "Au termes de mes deux années de DUT à Angers, j'ai obtenu mon DUT Génie Électrique et Informatique Industrielle en spécialité informatique.<newline/> Tout au long de ce parcours, j'ai pu apprendre beaucoup de choses dans les domaines de l'informatique ainsi que de l'électronique"
+    },
+    {
+      "date": "2016 - 2018",
+      "title": "Entraineur de Tennis",
+      "description": "Durant mon année de Terminale, en parallèle des cours j'ai passé une formation d'initiateur de Tennis. Celle-ci m'a permis donner des cours de Tennis en tant que bénévole, permettant d'aider mon club ainsi que mon entraineur à faire des cours avec plus de jeunes.<newline/> J'ai donc, pendant 2 ans, eu l'occasion d'entrainer des jeunes et d'aider mon entraineur lors d'évènements organisés par le club (des tournois par exemple). Ces jeunes avaient entre 8 et 15 ans et étaient licenciés au TCA (Tennis Club Authion)"
+    },
+    {
+      "date": "2014 - 2016",
+      "title": "Lycée Chevrollier Angers",
+      "description": "Obtention du bac STI2D option SIN (Système d'Information et Numérique), mention bien"
+    }
+  ]
+}
