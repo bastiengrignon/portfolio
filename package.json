@@ -37,7 +37,7 @@
     "eslint-plugin-react": "^7.22.0",
     "framer-motion": "^3.7.0",
     "i18next": "^19.8.4",
-    "postcss": "^7.0.35",
+    "postcss": "^8.2.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.5",
